@@ -1,0 +1,13 @@
+<h1>Convert <%=params.fetch("currency_one")%></h1>
+<div>
+<p>
+Go <a href = "/">back</a>.
+</p>
+</div>
+<div>
+<ul>
+<%for currency in @currencies%>
+<li><a href ="/<%=params.fetch("currency_one")%>/<%=currency%>">Convert 1 <%=params.fetch("currency_one")%> to <%=currency%>...</a>
+<%end%>
+</div>
+</ul>
